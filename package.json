@@ -5,7 +5,7 @@
   "scripts": {
     "build": "npm run clean && npm test && tsc",
     "clean": "del-cli lib dist",
-    "bundle": "npm run clean && microbundle build -i src/lambda.ts -o dist/lambda.js --target node --format esm,modern --sourcemap --external oracledb",
+    "bundle": "npm run clean && microbundle build -i src/lambda.ts -o dist/lambda.js --target node --format esm --generateTypes false --sourcemap --external oracledb",
     "format": "prettier . --write",
     "lint": "eslint . --ext .js,.ts",
     "lint:fix": "eslint . --ext .js,.ts --fix",
