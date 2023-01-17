@@ -1,1 +1,1 @@
-# tsup-lambda
+# microbundle-lambda
